@@ -16,14 +16,17 @@ class CC {
 
   async init() {
     // Suppress "Could not decrypt" from SEA internally
-    const origLog = console.log;
-    console.log = function (...args) {
-      if (args[0] === 'Could not decrypt' || (args[0] && args[0].message === 'Could not decrypt')) return;
-      // Suppress GUN warnings and extra welcome messages
-      if (typeof args[0] === 'string' && (args[0].includes('No localStorage') || args[0].includes('Hello wonderful person'))) return;
-      if (args[0] === 'AXE relay enabled!') return;
-      origLog.apply(console, args);
-    };
+    if (!console.__cc_wrapped) {
+      const origLog = console.log;
+      console.log = function (...args) {
+        if (args[0] === 'Could not decrypt' || (args[0] && args[0].message === 'Could not decrypt')) return;
+        // Suppress GUN warnings and extra welcome messages
+        if (typeof args[0] === 'string' && (args[0].includes('No localStorage') || args[0].includes('Hello wonderful person'))) return;
+        if (args[0] === 'AXE relay enabled!') return;
+        origLog.apply(console, args);
+      };
+      console.__cc_wrapped = true;
+    }
 
     const peers = await Relays.forceListUpdate();
     this.gun = new Gun({ peers, localStorage: false, radisk: false });
@@ -96,10 +99,8 @@ class CC {
   }
 
   clear() {
-    if (!this.messages) return;
-    this.messages.map().once((data, key) => {
-      if (data) this.messages.get(key).put(null);
-    });
+    this.startTime = Date.now();
+    this.seen.clear();
   }
 }
 

@@ -41,19 +41,19 @@ console.log(chalk.gray(`=====================================\n`));
     const peers = await cc.init();
     spinner.succeed(chalk.green(`Connected to ${peers.length} relay peers!`));
 
-    const rl = readline.createInterface({ input: process.stdin });
+    const rl = readline.createInterface({ 
+      input: process.stdin, 
+      output: process.stdout,
+      prompt: chalk.blue.bold(`${ALIAS} ❯ `)
+    });
 
     console.log(chalk.cyan(`\n💬 Joined channel: ${chalk.bold(ROOM_NAME)}`));
     console.log(chalk.gray(`Type and press Enter to send messages. Use /clear to clean the console.\n`));
 
-    const prompt = () => {
-      process.stdout.write(chalk.blue.bold(`${ALIAS} ❯ `));
-    };
-
     cc.onMessage((msg) => {
       // Clear current prompt line before outputting received message
-      process.stdout.clearLine(0);
-      process.stdout.cursorTo(0);
+      readline.clearLine(process.stdout, 0);
+      readline.cursorTo(process.stdout, 0);
       
       const timeStr = new Date(msg.ts).toLocaleTimeString();
       let displayContent = msg.content;
@@ -68,33 +68,42 @@ console.log(chalk.gray(`=====================================\n`));
         console.log(`${chalk.gray(`[${timeStr}]`)} ${chalk.green.bold(msg.sender)} ❯ ${displayContent}`);
       }
       
-      prompt();
+      rl.prompt(true);
     });
 
-    prompt();
+    rl.prompt();
 
     rl.on('line', async (line) => {
       const text = line.trim();
 
       if (text === '/clear') {
         cc.clear();
-        process.stdout.clearLine(0);
-        process.stdout.cursorTo(0);
-        console.log(chalk.italic.yellow('🧹 Deleting messages...'));
-        prompt();
+        console.clear();
+        console.log(chalk.italic.yellow('🧹 Console cleared.'));
+        rl.prompt();
         return;
       }
 
       if (text) {
-        await cc.send(text); // CLI sends as 'text' type
-
-        process.stdout.moveCursor(0, -1);
-        process.stdout.clearLine(0);
+        // Optimistic local echo to keep UI fast
+        readline.moveCursor(process.stdout, 0, -1);
+        readline.clearLine(process.stdout, 0);
         const timeStr = new Date().toLocaleTimeString();
         console.log(`${chalk.gray(`[${timeStr}]`)} ${chalk.blue.bold(ALIAS)} ❯ ${text}`);
+
+        try {
+          await cc.send(text); // CLI sends as 'text' type
+        } catch (e) {
+          console.error(chalk.red('\n⚠️ Error sending message:'), e.message);
+        }
       }
       
-      prompt();
+      rl.prompt();
+    });
+
+    rl.on('close', () => {
+      console.log(chalk.yellow('\n👋 Goodbye!'));
+      process.exit(0);
     });
   } catch (error) {
     console.error(chalk.red.bold('\n❌ Initialization error:'), error);
