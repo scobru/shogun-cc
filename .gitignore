@@ -1,1 +1,5 @@
 node_modules
+gun-relays
+.gitignore
+package-lock.json
+yarn.lock

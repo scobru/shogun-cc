@@ -74,7 +74,7 @@ const CC = require("cc"); // or './index' if local
   // 3. Listen to incoming messages
   chat.onMessage((msg) => {
     console.log(
-      `Received at ${new Date(msg.ts).toLocaleTimeString()}: ${msg.text}`,
+      `[${new Date(msg.ts).toLocaleTimeString()}] ${msg.sender}: ${msg.content}`
     );
   });
 
@@ -85,7 +85,7 @@ const CC = require("cc"); // or './index' if local
 
 ### API Reference
 
-#### `new CC(roomName = 'CC', password = 'CC-PASSWORD')`
+#### `new CC(roomName = 'CC', password = 'CC-PASSWORD', alias = 'Anonymous')`
 
 Initializes the instance parameters. Connections do not start until you execute `init()`.
 
@@ -97,13 +97,15 @@ Starts the Gun instance and fetches active network relays. Subscribes to new mes
 
 Registers a listener that is triggered whenever a valid, correctly-decrypted message propagates to your node.
 
-- `callback`: Function called with a single object `{ text: string, ts: number, key: string }`.
+- `callback`: Function called with a single object `{ sender: string, type: string, content: any, ts: number, key: string }`.
 
-#### `await chat.send(text)`
+#### `await chat.send(content, type = 'text')`
 
-Encrypts text and timestamp using SEA, propagates it to the P2P network, and caches the key locally so the network echo won't replay it on your `onMessage` handler.
+Encrypts the payload and timestamp using SEA, propagates it to the P2P network, and caches the key locally so the network echo won't replay it on your `onMessage` handler.
 
-- `text`: Normal string payload. Returns a promise that resolves the unique Gun `key` created for propagation.
+- `content`: String payload or structured JSON object. 
+- `type`: Optional string to define the type of the message (defaults to `'text'`).
+Returns a promise that resolves the unique Gun `key` created for propagation.
 
 #### `chat.clear()`
 
