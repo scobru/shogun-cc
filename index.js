@@ -29,7 +29,7 @@ class CC {
     }
 
     const peers = await Relays.forceListUpdate();
-    this.gun = new Gun({ peers, localStorage: false, radisk: true });
+    this.gun = new Gun({ peers, localStorage: true, radisk: true });
     this.messages = this.gun.get(this.roomName);
 
     this.messages.map().on(async (encData, key) => {
@@ -44,7 +44,7 @@ class CC {
           if (decryptedText && decryptedTs && decryptedTs >= this.startTime) {
             if (this.onMessageCallback) {
               let parsedMsg = { sender: 'Unknown', type: 'text', content: decryptedText };
-              
+
               // Try parsing as structured agent payload
               try {
                 const parsed = JSON.parse(decryptedText);
@@ -55,10 +55,10 @@ class CC {
                 // Ignore parsing errors, fallback to plain text format
               }
 
-              this.onMessageCallback({ 
-                ...parsedMsg, 
-                ts: decryptedTs, 
-                key 
+              this.onMessageCallback({
+                ...parsedMsg,
+                ts: decryptedTs,
+                key
               });
             }
           }
@@ -79,10 +79,10 @@ class CC {
     if (!this.messages) throw new Error('CC not initialized. Call init() first.');
 
     const key = Date.now() + '-' + Math.random().toString(36).slice(2);
-    
+
     // Add to seen so we don't process our own broadcast back
     this.seen.add(key);
-    
+
     // Construct structured payload
     const payload = {
       sender: this.alias,
