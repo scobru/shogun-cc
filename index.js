@@ -1,6 +1,14 @@
 const Gun = require('gun');
 require('gun/sea');
 const Relays = require('shogun-relays');
+const fs = require('fs');
+const path = require('path');
+
+function logDebug(...args) {
+  const msg = `[DEBUG ${new Date().toISOString()}] ` + args.map(a => typeof a === 'object' ? JSON.stringify(a) : a).join(' ') + '\n';
+  console.log(msg.trim());
+  try { fs.appendFileSync(path.join(process.cwd(), 'debug.log'), msg); } catch(e) {}
+}
 
 class CC {
   constructor(roomName = 'CC', password = 'CC-PASSWORD', alias = 'Anonymous') {
@@ -9,7 +17,8 @@ class CC {
     this.alias = alias;
     this.gun = null;
     this.messages = null;
-    this.startTime = Date.now();
+    // Allow up to 10 minutes of clock drift between machines
+    this.startTime = Date.now() - (10 * 60 * 1000);
     this.seen = new Set();
     this.onMessageCallback = null;
   }
@@ -29,20 +38,23 @@ class CC {
     }
 
     const peers = await Relays.forceListUpdate();
-    console.log(peers);
+    logDebug('Fetched relays:', peers.length);
     this.gun = new Gun({ peers, localStorage: false, radisk: false });
     this.messages = this.gun.get(this.roomName);
 
     this.messages.map().on(async (encData, key) => {
+      // logDebug(`Received node update - key: ${key}, saw text?`, !!(encData && encData.text), 'already seen?', this.seen.has(key));
       if (encData && encData.text && !this.seen.has(key)) {
+        logDebug(`Attempting decrypt for - key: ${key}`);
         this.seen.add(key);
 
         try {
           // Decrypt the text and timestamp
           const decryptedText = await Gun.SEA.decrypt(encData.text, this.password);
           const decryptedTs = await Gun.SEA.decrypt(encData.ts, this.password);
-
+          
           if (decryptedText && decryptedTs && decryptedTs >= this.startTime) {
+            logDebug(`[SUCCESS] Decrypted valid msg - key: ${key}, ts: ${decryptedTs}, text snippet:`, decryptedText.substring(0, 15));
             if (this.onMessageCallback) {
               let parsedMsg = { sender: 'Unknown', type: 'text', content: decryptedText };
 
@@ -62,8 +74,15 @@ class CC {
                 key
               });
             }
+          } else {
+             if (decryptedText) {
+                logDebug(`Message ignored (timestamp too old) - key: ${key}, msgTs: ${decryptedTs}, startTime: ${this.startTime}`);
+             } else {
+                logDebug(`Message ignored (missing fields or wrong password) - key: ${key}`);
+             }
           }
         } catch (err) {
+          logDebug(`Decrypt exception - key: ${key}`, err.message || err);
           // Failed to decrypt, ignore message
         }
       }
@@ -95,12 +114,16 @@ class CC {
     const encryptedText = await Gun.SEA.encrypt(JSON.stringify(payload), this.password);
     const encryptedTs = await Gun.SEA.encrypt(Date.now(), this.password);
 
-    this.messages.get(key).put({ text: encryptedText, ts: encryptedTs });
+    logDebug(`Sending to relays - key: ${key}`);
+    this.messages.get(key).put({ text: encryptedText, ts: encryptedTs }, (ack) => {
+       logDebug(`Put ack - key: ${key}`, ack);
+       if (ack.err) logDebug(`Put error - key: ${key}`, ack.err);
+    });
     return key;
   }
 
   clear() {
-    this.startTime = Date.now();
+    this.startTime = Date.now() - (10 * 60 * 1000);
     this.seen.clear();
   }
 }
