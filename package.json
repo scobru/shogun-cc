@@ -14,8 +14,8 @@
   },
   "dependencies": {
     "chalk": "^4.1.2",
+    "gun": "^0.2020.1241",
     "ora": "^5.4.1",
-    "gun": "git+https://github.com/scobru/gun",
     "shogun-relays": "git+https://github.com/scobru/shogun-relays"
   }
 }
