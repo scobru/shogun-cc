@@ -29,6 +29,7 @@ class CC {
     }
 
     const peers = await Relays.forceListUpdate();
+    console.log(peers);
     this.gun = new Gun({ peers, localStorage: false, radisk: false });
     this.messages = this.gun.get(this.roomName);
 
