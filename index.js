@@ -7,7 +7,7 @@ const path = require('path');
 function logDebug(...args) {
   const msg = `[DEBUG ${new Date().toISOString()}] ` + args.map(a => typeof a === 'object' ? JSON.stringify(a) : a).join(' ') + '\n';
   console.log(msg.trim());
-  try { fs.appendFileSync(path.join(process.cwd(), 'debug.log'), msg); } catch(e) {}
+  try { fs.appendFileSync(path.join(process.cwd(), 'debug.log'), msg); } catch (e) { }
 }
 
 class CC {
@@ -39,7 +39,7 @@ class CC {
 
     const peers = await Relays.forceListUpdate();
     logDebug('Fetched relays:', peers.length);
-    this.gun = new Gun({ peers, localStorage: false, radisk: false });
+    this.gun = Gun({ peers, localStorage: false, radisk: false });
     this.messages = this.gun.get(this.roomName);
 
     this.messages.map().on(async (encData, key) => {
@@ -52,7 +52,7 @@ class CC {
           // Decrypt the text and timestamp
           const decryptedText = await Gun.SEA.decrypt(encData.text, this.password);
           const decryptedTs = await Gun.SEA.decrypt(encData.ts, this.password);
-          
+
           if (decryptedText && decryptedTs && decryptedTs >= this.startTime) {
             logDebug(`[SUCCESS] Decrypted valid msg - key: ${key}, ts: ${decryptedTs}, text snippet:`, decryptedText.substring(0, 15));
             if (this.onMessageCallback) {
@@ -75,11 +75,11 @@ class CC {
               });
             }
           } else {
-             if (decryptedText) {
-                logDebug(`Message ignored (timestamp too old) - key: ${key}, msgTs: ${decryptedTs}, startTime: ${this.startTime}`);
-             } else {
-                logDebug(`Message ignored (missing fields or wrong password) - key: ${key}`);
-             }
+            if (decryptedText) {
+              logDebug(`Message ignored (timestamp too old) - key: ${key}, msgTs: ${decryptedTs}, startTime: ${this.startTime}`);
+            } else {
+              logDebug(`Message ignored (missing fields or wrong password) - key: ${key}`);
+            }
           }
         } catch (err) {
           logDebug(`Decrypt exception - key: ${key}`, err.message || err);
@@ -116,8 +116,8 @@ class CC {
 
     logDebug(`Sending to relays - key: ${key}`);
     this.messages.get(key).put({ text: encryptedText, ts: encryptedTs }, (ack) => {
-       logDebug(`Put ack - key: ${key}`, ack);
-       if (ack.err) logDebug(`Put error - key: ${key}`, ack.err);
+      logDebug(`Put ack - key: ${key}`, ack);
+      if (ack.err) logDebug(`Put error - key: ${key}`, ack.err);
     });
     return key;
   }
