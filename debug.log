@@ -32,3 +32,28 @@
 [DEBUG 2026-03-20T00:03:53.940Z] Put ack - key: 1773965033311-drjmr6y8vv5 {"#":"oiQPPdK1q","@":"zcx4KqghB","ok":1}
 [DEBUG 2026-03-20T00:04:01.586Z] Sending to relays - key: 1773965041585-jbk3ld0ttyi
 [DEBUG 2026-03-20T00:04:02.295Z] Put ack - key: 1773965041585-jbk3ld0ttyi {"#":"6DgxCrpuO","@":"ft9BfigKJ","ok":1}
+[DEBUG 2026-03-20T00:05:35.946Z] Fetched relays: 4
+[DEBUG 2026-03-20T00:05:36.434Z] Attempting decrypt for - key: 1773964751232-ni16rv3ky0p
+[DEBUG 2026-03-20T00:05:36.458Z] [SUCCESS] Decrypted msg - key: 1773964751232-ni16rv3ky0p, sender: alice, snippet: test 2
+[DEBUG 2026-03-20T00:05:36.501Z] Attempting decrypt for - key: 1773964770069-3nnxfyjtb9t
+[DEBUG 2026-03-20T00:05:36.511Z] Attempting decrypt for - key: 1773964867039-pl7zav97swf
+[DEBUG 2026-03-20T00:05:36.522Z] Attempting decrypt for - key: 1773965033311-drjmr6y8vv5
+[DEBUG 2026-03-20T00:05:36.534Z] Attempting decrypt for - key: 1773965041585-jbk3ld0ttyi
+[DEBUG 2026-03-20T00:05:36.554Z] [SUCCESS] Decrypted msg - key: 1773964770069-3nnxfyjtb9t, sender: alice, snippet: we
+[DEBUG 2026-03-20T00:05:36.566Z] [SUCCESS] Decrypted msg - key: 1773964867039-pl7zav97swf, sender: alice, snippet: asd
+[DEBUG 2026-03-20T00:05:36.576Z] [SUCCESS] Decrypted msg - key: 1773965033311-drjmr6y8vv5, sender: alice, snippet: come va
+[DEBUG 2026-03-20T00:05:36.588Z] [SUCCESS] Decrypted msg - key: 1773965041585-jbk3ld0ttyi, sender: alice, snippet: asd
+[DEBUG 2026-03-20T00:05:36.841Z] Attempting decrypt for - key: 1773963963642-4sgvnd2ierc
+[DEBUG 2026-03-20T00:05:36.851Z] Message ignored (timestamp too old) - key: 1773963963642-4sgvnd2ierc, msgTs: 1773963963653, startTime: 1773964535457
+[DEBUG 2026-03-20T00:05:36.869Z] Attempting decrypt for - key: 1773963967394-5vm7vttkp7
+[DEBUG 2026-03-20T00:05:36.887Z] Attempting decrypt for - key: 1773964730049-yx0t02kswcc
+[DEBUG 2026-03-20T00:05:36.903Z] Attempting decrypt for - key: 1773964739423-0htdpu4367ms
+[DEBUG 2026-03-20T00:05:36.921Z] Message ignored (timestamp too old) - key: 1773963967394-5vm7vttkp7, msgTs: 1773963967395, startTime: 1773964535457
+[DEBUG 2026-03-20T00:05:36.938Z] [SUCCESS] Decrypted msg - key: 1773964730049-yx0t02kswcc, sender: bob, snippet: ciao
+[DEBUG 2026-03-20T00:05:36.959Z] [SUCCESS] Decrypted msg - key: 1773964739423-0htdpu4367ms, sender: alice, snippet: hello
+[DEBUG 2026-03-20T00:05:52.993Z] Sending to relays - key: 1773965152987-qsyjrtmt4o
+[DEBUG 2026-03-20T00:05:53.700Z] Put ack - key: 1773965152987-qsyjrtmt4o {"#":"obOgvZtMx","@":"s9wNyjViC","ok":1}
+[DEBUG 2026-03-20T00:06:23.744Z] Sending to relays - key: 1773965183742-zg9sdbzksk
+[DEBUG 2026-03-20T00:06:24.384Z] Put ack - key: 1773965183742-zg9sdbzksk {"#":"WOmnFPoci","@":"kkDQ6UTEA","ok":1}
+[DEBUG 2026-03-20T00:06:30.569Z] Sending to relays - key: 1773965190568-dme8tnfgkqg
+[DEBUG 2026-03-20T00:06:31.285Z] Put ack - key: 1773965190568-dme8tnfgkqg {"#":"P8ALA2xxo","@":"hMnwTVrgj","ok":1}
