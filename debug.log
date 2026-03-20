@@ -127,3 +127,130 @@
 [DEBUG 2026-03-20T00:08:05.700Z] Put ack - key: 1773965284962-jfr2m7o8r9j {"#":"0dpcyh5UW","@":"O9T2ObmQh","ok":1}
 [DEBUG 2026-03-20T00:08:13.663Z] Sending to relays - key: 1773965293662-8v00lhqz2oa
 [DEBUG 2026-03-20T00:08:14.293Z] Put ack - key: 1773965293662-8v00lhqz2oa {"#":"uWTfxu9iQ","@":"BgTl4OwHS","ok":1}
+[DEBUG 2026-03-20T00:10:01.783Z] Fetched relays: 4
+[DEBUG 2026-03-20T00:10:02.254Z] Attempting decrypt for - key: 1773965243942-kgfe62lkn2n
+[DEBUG 2026-03-20T00:10:02.283Z] [SUCCESS] Decrypted msg - key: 1773965243942-kgfe62lkn2n, sender: root, snippet: hello
+[DEBUG 2026-03-20T00:10:02.355Z] Attempting decrypt for - key: 1773965246438-619zrfmen4n
+[DEBUG 2026-03-20T00:10:02.370Z] [SUCCESS] Decrypted msg - key: 1773965246438-619zrfmen4n, sender: scobru, snippet: ciao
+[DEBUG 2026-03-20T00:10:02.387Z] Attempting decrypt for - key: 1773965259952-d1ohdl18yot
+[DEBUG 2026-03-20T00:10:02.402Z] Attempting decrypt for - key: 1773965284962-jfr2m7o8r9j
+[DEBUG 2026-03-20T00:10:02.424Z] Attempting decrypt for - key: 1773965293662-8v00lhqz2oa
+[DEBUG 2026-03-20T00:10:02.448Z] [SUCCESS] Decrypted msg - key: 1773965259952-d1ohdl18yot, sender: scobru, snippet: come va?
+[DEBUG 2026-03-20T00:10:02.462Z] [SUCCESS] Decrypted msg - key: 1773965284962-jfr2m7o8r9j, sender: scobru, snippet: test
+[DEBUG 2026-03-20T00:10:02.489Z] [SUCCESS] Decrypted msg - key: 1773965293662-8v00lhqz2oa, sender: scobru, snippet: test
+[DEBUG 2026-03-20T00:10:02.508Z] Attempting decrypt for - key: 1773866254000-dzfvvda8ifj
+[DEBUG 2026-03-20T00:10:02.526Z] Message ignored (timestamp too old) - key: 1773866254000-dzfvvda8ifj, msgTs: 1773866254002, startTime: 1773964801343
+[DEBUG 2026-03-20T00:10:02.540Z] Attempting decrypt for - key: 1773866258117-0ziv2quafw29
+[DEBUG 2026-03-20T00:10:02.556Z] Attempting decrypt for - key: 1773866273507-utajkdzfpr
+[DEBUG 2026-03-20T00:10:02.573Z] Attempting decrypt for - key: 1773866276874-fhwm2k19vr5
+[DEBUG 2026-03-20T00:10:02.587Z] Attempting decrypt for - key: 1773866281443-8xomk25398l
+[DEBUG 2026-03-20T00:10:02.600Z] Attempting decrypt for - key: 1773866885381-6099cq4gvte
+[DEBUG 2026-03-20T00:10:02.615Z] Message ignored (timestamp too old) - key: 1773866258117-0ziv2quafw29, msgTs: 1773866258120, startTime: 1773964801343
+[DEBUG 2026-03-20T00:10:02.628Z] Message ignored (timestamp too old) - key: 1773866273507-utajkdzfpr, msgTs: 1773866273510, startTime: 1773964801343
+[DEBUG 2026-03-20T00:10:02.641Z] Message ignored (timestamp too old) - key: 1773866276874-fhwm2k19vr5, msgTs: 1773866276876, startTime: 1773964801343
+[DEBUG 2026-03-20T00:10:02.654Z] Message ignored (timestamp too old) - key: 1773866281443-8xomk25398l, msgTs: 1773866281444, startTime: 1773964801343
+[DEBUG 2026-03-20T00:10:02.664Z] Message ignored (timestamp too old) - key: 1773866885381-6099cq4gvte, msgTs: 1773866885383, startTime: 1773964801343
+[DEBUG 2026-03-20T00:10:02.680Z] Attempting decrypt for - key: 1773964503135-zncnmndhph
+[DEBUG 2026-03-20T00:10:02.696Z] Message ignored (timestamp too old) - key: 1773964503135-zncnmndhph, msgTs: 1773964503136, startTime: 1773964801343
+[DEBUG 2026-03-20T00:10:02.707Z] Attempting decrypt for - key: 1773964527398-adrvacfoqma
+[DEBUG 2026-03-20T00:10:02.726Z] Attempting decrypt for - key: 1773964583222-2vz73rakav9
+[DEBUG 2026-03-20T00:10:02.738Z] Attempting decrypt for - key: 1773964593335-1w6mza0g2yv
+[DEBUG 2026-03-20T00:10:02.753Z] Attempting decrypt for - key: 1773964599740-839o2nyjygm
+[DEBUG 2026-03-20T00:10:02.771Z] Message ignored (timestamp too old) - key: 1773964527398-adrvacfoqma, msgTs: 1773964527401, startTime: 1773964801343
+[DEBUG 2026-03-20T00:10:02.783Z] Message ignored (timestamp too old) - key: 1773964583222-2vz73rakav9, msgTs: 1773964583224, startTime: 1773964801343
+[DEBUG 2026-03-20T00:10:02.797Z] Message ignored (timestamp too old) - key: 1773964593335-1w6mza0g2yv, msgTs: 1773964593336, startTime: 1773964801343
+[DEBUG 2026-03-20T00:10:02.808Z] Message ignored (timestamp too old) - key: 1773964599740-839o2nyjygm, msgTs: 1773964599742, startTime: 1773964801343
+[DEBUG 2026-03-20T00:10:02.873Z] Attempting decrypt for - key: 1773914029443-sk8y088z4d
+[DEBUG 2026-03-20T00:10:02.889Z] Message ignored (timestamp too old) - key: 1773914029443-sk8y088z4d, msgTs: 1773914029444, startTime: 1773964801343
+[DEBUG 2026-03-20T00:10:02.908Z] Attempting decrypt for - key: 1773916884336-rxy0zx94y
+[DEBUG 2026-03-20T00:10:02.926Z] Attempting decrypt for - key: 1773916904944-87yo4v8pu8p
+[DEBUG 2026-03-20T00:10:02.938Z] Attempting decrypt for - key: 1773917238770-cmu0vazt5l
+[DEBUG 2026-03-20T00:10:02.964Z] Message ignored (timestamp too old) - key: 1773916884336-rxy0zx94y, msgTs: 1773916884336, startTime: 1773964801343
+[DEBUG 2026-03-20T00:10:03.003Z] Message ignored (timestamp too old) - key: 1773916904944-87yo4v8pu8p, msgTs: 1773916904945, startTime: 1773964801343
+[DEBUG 2026-03-20T00:10:03.026Z] Message ignored (timestamp too old) - key: 1773917238770-cmu0vazt5l, msgTs: 1773917238771, startTime: 1773964801343
+[DEBUG 2026-03-20T00:10:04.895Z] Sending to relays - msgId: 1773965404894-1xh78c294f
+[DEBUG 2026-03-20T00:10:04.905Z] Attempting decrypt for - key: mmy576qvd6V1lAWz6Qtu
+[DEBUG 2026-03-20T00:10:04.915Z] [SUCCESS] Decrypted msg - key: mmy576qvd6V1lAWz6Qtu, sender: scobru, snippet: hello
+[DEBUG 2026-03-20T00:10:05.997Z] Set ack - msgId: 1773965404894-1xh78c294f {"#":"Q7nocOBKc","@":"eDxL89jrB","ok":1}
+[DEBUG 2026-03-20T00:10:11.350Z] Attempting decrypt for - key: mmy57b9onAB84g27P5ox
+[DEBUG 2026-03-20T00:10:11.362Z] [SUCCESS] Decrypted msg - key: mmy57b9onAB84g27P5ox, sender: root, snippet: test
+[DEBUG 2026-03-20T00:10:13.952Z] Sending to relays - msgId: 1773965413951-0spq37xyec
+[DEBUG 2026-03-20T00:10:13.994Z] Attempting decrypt for - key: mmy57drbn8Oqm6rByNeM
+[DEBUG 2026-03-20T00:10:14.018Z] [SUCCESS] Decrypted msg - key: mmy57drbn8Oqm6rByNeM, sender: scobru, snippet: ciao caro
+[DEBUG 2026-03-20T00:10:14.669Z] Set ack - msgId: 1773965413951-0spq37xyec {"#":"jkd6jbybV","@":"2Bq6nC2Cb","ok":1}
+[DEBUG 2026-03-20T00:10:44.125Z] Sending to relays - msgId: 1773965444124-75hrfp4s3tg
+[DEBUG 2026-03-20T00:10:44.141Z] Attempting decrypt for - key: mmy5810rZHAArDHNflzv
+[DEBUG 2026-03-20T00:10:44.162Z] [SUCCESS] Decrypted msg - key: mmy5810rZHAArDHNflzv, sender: scobru, snippet: ciao
+[DEBUG 2026-03-20T00:10:44.724Z] Set ack - msgId: 1773965444124-75hrfp4s3tg {"#":"vVoAIgeVs","@":"mzrCKpzoT","ok":1}
+[DEBUG 2026-03-20T00:10:48.165Z] Sending to relays - msgId: 1773965448163-ea1jgb136mc
+[DEBUG 2026-03-20T00:10:48.180Z] Attempting decrypt for - key: mmy5844y53ijxWGK5wHM
+[DEBUG 2026-03-20T00:10:48.197Z] [SUCCESS] Decrypted msg - key: mmy5844y53ijxWGK5wHM, sender: scobru, snippet: come va
+[DEBUG 2026-03-20T00:10:48.750Z] Set ack - msgId: 1773965448163-ea1jgb136mc {"#":"hhONnltxo","@":"b9ELCTtcc","ok":1}
+[DEBUG 2026-03-20T00:10:56.555Z] Fetched relays: 4
+[DEBUG 2026-03-20T00:10:56.961Z] Attempting decrypt for - key: mmy57b9onAB84g27P5ox
+[DEBUG 2026-03-20T00:10:57.020Z] [SUCCESS] Decrypted msg - key: mmy57b9onAB84g27P5ox, sender: root, snippet: test
+[DEBUG 2026-03-20T00:10:57.096Z] Attempting decrypt for - key: 1773964527398-adrvacfoqma
+[DEBUG 2026-03-20T00:10:57.116Z] Message ignored (timestamp too old) - key: 1773964527398-adrvacfoqma, msgTs: 1773964527401, startTime: 1773964855977
+[DEBUG 2026-03-20T00:10:57.131Z] Attempting decrypt for - key: 1773964583222-2vz73rakav9
+[DEBUG 2026-03-20T00:10:57.152Z] Message ignored (timestamp too old) - key: 1773964583222-2vz73rakav9, msgTs: 1773964583224, startTime: 1773964855977
+[DEBUG 2026-03-20T00:10:57.174Z] Attempting decrypt for - key: 1773964593335-1w6mza0g2yv
+[DEBUG 2026-03-20T00:10:57.194Z] Attempting decrypt for - key: 1773965243942-kgfe62lkn2n
+[DEBUG 2026-03-20T00:10:57.218Z] Message ignored (timestamp too old) - key: 1773964593335-1w6mza0g2yv, msgTs: 1773964593336, startTime: 1773964855977
+[DEBUG 2026-03-20T00:10:57.233Z] [SUCCESS] Decrypted msg - key: 1773965243942-kgfe62lkn2n, sender: root, snippet: hello
+[DEBUG 2026-03-20T00:10:57.414Z] Attempting decrypt for - key: 1773866254000-dzfvvda8ifj
+[DEBUG 2026-03-20T00:10:57.431Z] Message ignored (timestamp too old) - key: 1773866254000-dzfvvda8ifj, msgTs: 1773866254002, startTime: 1773964855977
+[DEBUG 2026-03-20T00:10:57.450Z] Attempting decrypt for - key: 1773866258117-0ziv2quafw29
+[DEBUG 2026-03-20T00:10:57.488Z] Message ignored (timestamp too old) - key: 1773866258117-0ziv2quafw29, msgTs: 1773866258120, startTime: 1773964855977
+[DEBUG 2026-03-20T00:10:57.507Z] Attempting decrypt for - key: 1773866276874-fhwm2k19vr5
+[DEBUG 2026-03-20T00:10:57.524Z] Message ignored (timestamp too old) - key: 1773866276874-fhwm2k19vr5, msgTs: 1773866276876, startTime: 1773964855977
+[DEBUG 2026-03-20T00:10:57.540Z] Attempting decrypt for - key: 1773866281443-8xomk25398l
+[DEBUG 2026-03-20T00:10:57.557Z] Message ignored (timestamp too old) - key: 1773866281443-8xomk25398l, msgTs: 1773866281444, startTime: 1773964855977
+[DEBUG 2026-03-20T00:10:57.575Z] Attempting decrypt for - key: 1773914029443-sk8y088z4d
+[DEBUG 2026-03-20T00:10:57.589Z] Attempting decrypt for - key: 1773866885381-6099cq4gvte
+[DEBUG 2026-03-20T00:10:57.604Z] Message ignored (timestamp too old) - key: 1773914029443-sk8y088z4d, msgTs: 1773914029444, startTime: 1773964855977
+[DEBUG 2026-03-20T00:10:57.623Z] Message ignored (timestamp too old) - key: 1773866885381-6099cq4gvte, msgTs: 1773866885383, startTime: 1773964855977
+[DEBUG 2026-03-20T00:10:57.642Z] Attempting decrypt for - key: 1773916884336-rxy0zx94y
+[DEBUG 2026-03-20T00:10:57.658Z] Message ignored (timestamp too old) - key: 1773916884336-rxy0zx94y, msgTs: 1773916884336, startTime: 1773964855977
+[DEBUG 2026-03-20T00:10:57.673Z] Attempting decrypt for - key: 1773916904944-87yo4v8pu8p
+[DEBUG 2026-03-20T00:10:57.693Z] Attempting decrypt for - key: 1773917238770-cmu0vazt5l
+[DEBUG 2026-03-20T00:10:57.718Z] Message ignored (timestamp too old) - key: 1773916904944-87yo4v8pu8p, msgTs: 1773916904945, startTime: 1773964855977
+[DEBUG 2026-03-20T00:10:57.737Z] Message ignored (timestamp too old) - key: 1773917238770-cmu0vazt5l, msgTs: 1773917238771, startTime: 1773964855977
+[DEBUG 2026-03-20T00:10:57.756Z] Attempting decrypt for - key: 1773866273507-utajkdzfpr
+[DEBUG 2026-03-20T00:10:57.774Z] Message ignored (timestamp too old) - key: 1773866273507-utajkdzfpr, msgTs: 1773866273510, startTime: 1773964855977
+[DEBUG 2026-03-20T00:10:57.846Z] Attempting decrypt for - key: mmy5810rZHAArDHNflzv
+[DEBUG 2026-03-20T00:10:57.863Z] [SUCCESS] Decrypted msg - key: mmy5810rZHAArDHNflzv, sender: scobru, snippet: ciao
+[DEBUG 2026-03-20T00:10:58.026Z] Attempting decrypt for - key: mmy5844y53ijxWGK5wHM
+[DEBUG 2026-03-20T00:10:58.041Z] Attempting decrypt for - key: mmy57drbn8Oqm6rByNeM
+[DEBUG 2026-03-20T00:10:58.064Z] [SUCCESS] Decrypted msg - key: mmy5844y53ijxWGK5wHM, sender: scobru, snippet: come va
+[DEBUG 2026-03-20T00:10:58.082Z] [SUCCESS] Decrypted msg - key: mmy57drbn8Oqm6rByNeM, sender: scobru, snippet: ciao caro
+[DEBUG 2026-03-20T00:10:58.130Z] Attempting decrypt for - key: mmy580m67VWeqH18CFeN
+[DEBUG 2026-03-20T00:10:58.159Z] [SUCCESS] Decrypted msg - key: mmy580m67VWeqH18CFeN, sender: root, snippet: hei
+[DEBUG 2026-03-20T00:10:58.242Z] Attempting decrypt for - key: 1773964503135-zncnmndhph
+[DEBUG 2026-03-20T00:10:58.259Z] Attempting decrypt for - key: 1773964599740-839o2nyjygm
+[DEBUG 2026-03-20T00:10:58.280Z] Attempting decrypt for - key: 1773965246438-619zrfmen4n
+[DEBUG 2026-03-20T00:10:58.297Z] Attempting decrypt for - key: 1773965259952-d1ohdl18yot
+[DEBUG 2026-03-20T00:10:58.314Z] Attempting decrypt for - key: 1773965284962-jfr2m7o8r9j
+[DEBUG 2026-03-20T00:10:58.329Z] Attempting decrypt for - key: 1773965293662-8v00lhqz2oa
+[DEBUG 2026-03-20T00:10:58.348Z] Attempting decrypt for - key: mmy576qvd6V1lAWz6Qtu
+[DEBUG 2026-03-20T00:10:58.367Z] Message ignored (timestamp too old) - key: 1773964503135-zncnmndhph, msgTs: 1773964503136, startTime: 1773964855977
+[DEBUG 2026-03-20T00:10:58.383Z] Message ignored (timestamp too old) - key: 1773964599740-839o2nyjygm, msgTs: 1773964599742, startTime: 1773964855977
+[DEBUG 2026-03-20T00:10:58.401Z] [SUCCESS] Decrypted msg - key: 1773965246438-619zrfmen4n, sender: scobru, snippet: ciao
+[DEBUG 2026-03-20T00:10:58.419Z] [SUCCESS] Decrypted msg - key: 1773965259952-d1ohdl18yot, sender: scobru, snippet: come va?
+[DEBUG 2026-03-20T00:10:58.436Z] [SUCCESS] Decrypted msg - key: 1773965284962-jfr2m7o8r9j, sender: scobru, snippet: test
+[DEBUG 2026-03-20T00:10:58.451Z] [SUCCESS] Decrypted msg - key: 1773965293662-8v00lhqz2oa, sender: scobru, snippet: test
+[DEBUG 2026-03-20T00:10:58.468Z] [SUCCESS] Decrypted msg - key: mmy576qvd6V1lAWz6Qtu, sender: scobru, snippet: hello
+[DEBUG 2026-03-20T00:11:00.857Z] Sending to relays - msgId: 1773965460855-w6lxnb6se8l
+[DEBUG 2026-03-20T00:11:00.871Z] Attempting decrypt for - key: mmy58dxhUrQMEFNe7X8D
+[DEBUG 2026-03-20T00:11:00.894Z] [SUCCESS] Decrypted msg - key: mmy58dxhUrQMEFNe7X8D, sender: scobru, snippet: test
+[DEBUG 2026-03-20T00:11:01.445Z] Set ack - msgId: 1773965460855-w6lxnb6se8l {"#":"7ZTGcMI5a","@":"Btg3gZmfa","ok":1}
+[DEBUG 2026-03-20T00:11:09.008Z] Attempting decrypt for - key: mmy58jrnmGXacULPIoc8
+[DEBUG 2026-03-20T00:11:09.152Z] [SUCCESS] Decrypted msg - key: mmy58jrnmGXacULPIoc8, sender: root, snippet: lol
+[DEBUG 2026-03-20T00:11:40.780Z] Fetched relays: 4
+[DEBUG 2026-03-20T00:11:55.020Z] Sending to relays - msgId: 1773965515012-ycr3a99vxqr
+[DEBUG 2026-03-20T00:11:55.040Z] Attempting decrypt for - key: mmy59jq3GpkOZ2x9wrcG
+[DEBUG 2026-03-20T00:11:55.073Z] [SUCCESS] Decrypted msg - key: mmy59jq3GpkOZ2x9wrcG, sender: alice, snippet: hi
+[DEBUG 2026-03-20T00:11:55.692Z] Set ack - msgId: 1773965515012-ycr3a99vxqr {"#":"IXA8ZsiCp","@":"i9wXhOcun","ok":1}
+[DEBUG 2026-03-20T00:12:28.791Z] Sending to relays - msgId: 1773965548789-al1n4w9m5u
+[DEBUG 2026-03-20T00:12:28.805Z] Attempting decrypt for - key: mmy5a9s2TrInAAUbpx4g
+[DEBUG 2026-03-20T00:12:28.817Z] [SUCCESS] Decrypted msg - key: mmy5a9s2TrInAAUbpx4g, sender: alice, snippet: asd asd
+[DEBUG 2026-03-20T00:12:29.478Z] Set ack - msgId: 1773965548789-al1n4w9m5u {"#":"widq07uWs","@":"AHUIvpMH5","ok":1}

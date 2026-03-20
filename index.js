@@ -42,14 +42,12 @@ class CC {
     this.gun = Gun({ peers, localStorage: false, radisk: false });
     this.messages = this.gun.get(this.roomName);
 
-    this.messages.map().on(async (encData, key) => {
-      // logDebug(`Received node update - key: ${key}, saw text?`, !!(encData && encData.text), 'already seen?', this.seen.has(key));
+    const processMessage = async (encData, key) => {
       if (encData && encData.text && !this.seen.has(key)) {
         logDebug(`Attempting decrypt for - key: ${key}`);
         this.seen.add(key);
 
         try {
-          // Decrypt the text and timestamp
           const decryptedText = await Gun.SEA.decrypt(encData.text, this.password);
           const decryptedTs = await Gun.SEA.decrypt(encData.ts, this.password);
 
@@ -71,7 +69,7 @@ class CC {
             logDebug(`[SUCCESS] Decrypted msg - key: ${key}, sender: ${parsedMsg.sender}, snippet:`, preview.substring(0, 15));
 
             if (parsedMsg.msgId) {
-                if (this.seen.has(parsedMsg.msgId)) return; // Don't process our own optimistic local echo
+                if (this.seen.has(parsedMsg.msgId)) return;
                 this.seen.add(parsedMsg.msgId);
             }
 
@@ -91,9 +89,18 @@ class CC {
           }
         } catch (err) {
           logDebug(`Decrypt exception - key: ${key}`, err.message || err);
-          // Failed to decrypt, ignore message
         }
       }
+    };
+
+    // Load history
+    this.messages.map().on(processMessage);
+    
+    // Subscribe to the real-time broadcast scalar for 100% reliable live updates
+    this.gun.get(this.roomName + '-latest').on((encData, key) => {
+         if (encData && encData.keyId) {
+             processMessage(encData, encData.keyId);
+         }
     });
 
     return peers;
@@ -125,11 +132,16 @@ class CC {
 
     logDebug(`Sending to relays - msgId: ${msgId}`);
     
-    // Use .set() instead of .get(key).put() to guarantee real-time map().on() triggers across the network
-    this.messages.set({ text: encryptedText, ts: encryptedTs }, (ack) => {
+    const nodeData = { text: encryptedText, ts: encryptedTs };
+
+    // Use .set() for history map
+    this.messages.set(nodeData, (ack) => {
       logDebug(`Set ack - msgId: ${msgId}`, ack);
       if (ack.err) logDebug(`Set error - msgId: ${msgId}`, ack.err);
     });
+    
+    // Broadcast on the guaranteed scalar node for immediate cross-relay push
+    this.gun.get(this.roomName + '-latest').put({ ...nodeData, keyId: msgId });
     return msgId;
   }
 
