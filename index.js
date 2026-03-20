@@ -70,6 +70,11 @@ class CC {
             let preview = typeof parsedMsg.content === 'string' ? parsedMsg.content : (JSON.stringify(parsedMsg.content) || '');
             logDebug(`[SUCCESS] Decrypted msg - key: ${key}, sender: ${parsedMsg.sender}, snippet:`, preview.substring(0, 15));
 
+            if (parsedMsg.msgId) {
+                if (this.seen.has(parsedMsg.msgId)) return; // Don't process our own optimistic local echo
+                this.seen.add(parsedMsg.msgId);
+            }
+
             if (this.onMessageCallback) {
               this.onMessageCallback({
                 ...parsedMsg,
@@ -101,28 +106,31 @@ class CC {
   async send(content, type = 'text') {
     if (!this.messages) throw new Error('CC not initialized. Call init() first.');
 
-    const key = Date.now() + '-' + Math.random().toString(36).slice(2);
+    const msgId = Date.now() + '-' + Math.random().toString(36).slice(2);
 
     // Add to seen so we don't process our own broadcast back
-    this.seen.add(key);
+    this.seen.add(msgId);
 
     // Construct structured payload
     const payload = {
       sender: this.alias,
       type: type,
-      content: content
+      content: content,
+      msgId: msgId
     };
 
     // Encrypt the stringified payload and timestamp
     const encryptedText = await Gun.SEA.encrypt(JSON.stringify(payload), this.password);
     const encryptedTs = await Gun.SEA.encrypt(Date.now(), this.password);
 
-    logDebug(`Sending to relays - key: ${key}`);
-    this.messages.get(key).put({ text: encryptedText, ts: encryptedTs }, (ack) => {
-      logDebug(`Put ack - key: ${key}`, ack);
-      if (ack.err) logDebug(`Put error - key: ${key}`, ack.err);
+    logDebug(`Sending to relays - msgId: ${msgId}`);
+    
+    // Use .set() instead of .get(key).put() to guarantee real-time map().on() triggers across the network
+    this.messages.set({ text: encryptedText, ts: encryptedTs }, (ack) => {
+      logDebug(`Set ack - msgId: ${msgId}`, ack);
+      if (ack.err) logDebug(`Set error - msgId: ${msgId}`, ack.err);
     });
-    return key;
+    return msgId;
   }
 
   clear() {
