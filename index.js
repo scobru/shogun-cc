@@ -54,20 +54,23 @@ class CC {
           const decryptedTs = await Gun.SEA.decrypt(encData.ts, this.password);
 
           if (decryptedText && decryptedTs && decryptedTs >= this.startTime) {
-            logDebug(`[SUCCESS] Decrypted valid msg - key: ${key}, ts: ${decryptedTs}, text snippet:`, decryptedText.substring(0, 15));
-            if (this.onMessageCallback) {
-              let parsedMsg = { sender: 'Unknown', type: 'text', content: decryptedText };
+            let parsedMsg = { sender: 'Unknown', type: 'text', content: decryptedText };
 
-              // Try parsing as structured agent payload
+            if (typeof decryptedText === 'object') {
+              parsedMsg = decryptedText;
+            } else if (typeof decryptedText === 'string') {
               try {
                 const parsed = JSON.parse(decryptedText);
                 if (parsed && typeof parsed === 'object' && parsed.content !== undefined) {
                   parsedMsg = parsed;
                 }
-              } catch (e) {
-                // Ignore parsing errors, fallback to plain text format
-              }
+              } catch (e) { }
+            }
+            
+            let preview = typeof parsedMsg.content === 'string' ? parsedMsg.content : (JSON.stringify(parsedMsg.content) || '');
+            logDebug(`[SUCCESS] Decrypted msg - key: ${key}, sender: ${parsedMsg.sender}, snippet:`, preview.substring(0, 15));
 
+            if (this.onMessageCallback) {
               this.onMessageCallback({
                 ...parsedMsg,
                 ts: decryptedTs,
