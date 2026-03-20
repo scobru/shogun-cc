@@ -327,3 +327,51 @@
 [DEBUG 2026-03-20T00:17:03.677Z] Sending to relays - msgId: 1773965823676-kz6pryzfkxn
 [DEBUG 2026-03-20T00:17:03.691Z] Attempting decrypt for - key: mmy5g5vtukunAwqthLmo
 [DEBUG 2026-03-20T00:17:03.708Z] [SUCCESS] Decrypted msg - key: mmy5g5vtukunAwqthLmo, sender: bob, snippet: test data
+[DEBUG 2026-03-20T00:18:59.214Z] Fetched 4 relays, but forcing single relay connection for real-time stability: ["https://shogun-relay.scobrudot.dev/gun"]
+[DEBUG 2026-03-20T00:19:19.649Z] Sending to relays - msgId: 1773965959636-6fc72tsq7yj
+[DEBUG 2026-03-20T00:19:19.665Z] Attempting decrypt for - key: mmy5j2stZuqBGzdNxMr6
+[DEBUG 2026-03-20T00:19:19.690Z] [SUCCESS] Decrypted msg - key: mmy5j2stZuqBGzdNxMr6, sender: bob, snippet: asd
+[DEBUG 2026-03-20T00:19:26.558Z] Sending to relays - msgId: 1773965966556-ivhdcsldgck
+[DEBUG 2026-03-20T00:19:26.572Z] Attempting decrypt for - key: mmy5j84qjDlERojLIm5j
+[DEBUG 2026-03-20T00:19:26.586Z] [SUCCESS] Decrypted msg - key: mmy5j84qjDlERojLIm5j, sender: bob, snippet: asd
+[DEBUG 2026-03-20T00:19:35.351Z] Sending to relays - msgId: 1773965975349-buro1omxay
+[DEBUG 2026-03-20T00:19:35.369Z] Attempting decrypt for - key: mmy5jex2PWapBl8aa4VG
+[DEBUG 2026-03-20T00:19:35.386Z] [SUCCESS] Decrypted msg - key: mmy5jex2PWapBl8aa4VG, sender: bob, snippet: zxc
+[DEBUG 2026-03-20T08:20:03.306Z] Fetched 4 relays, but forcing single relay connection for real-time stability: ["https://shogun-relay.scobrudot.dev/gun"]
+[DEBUG 2026-03-20T08:20:06.285Z] Sending to relays - msgId: 1773994806279-asfprk207a
+[DEBUG 2026-03-20T08:20:06.305Z] Attempting decrypt for - key: mmympd0cnGgBlDdCBJpK
+[DEBUG 2026-03-20T08:20:06.325Z] [SUCCESS] Decrypted msg - key: mmympd0cnGgBlDdCBJpK, sender: bob, snippet: ciao
+[DEBUG 2026-03-20T08:20:15.369Z] Sending to relays - msgId: 1773994815368-bgbj2665fxp
+[DEBUG 2026-03-20T08:20:15.380Z] Attempting decrypt for - key: mmympk0iMegZANFC3gUV
+[DEBUG 2026-03-20T08:20:15.391Z] [SUCCESS] Decrypted msg - key: mmympk0iMegZANFC3gUV, sender: bob, snippet: test
+[DEBUG 2026-03-20T08:20:24.381Z] Fetched 4 relays, but forcing single relay connection for real-time stability: ["https://shogun-relay.scobrudot.dev/gun"]
+[DEBUG 2026-03-20T08:20:33.971Z] Sending to relays - msgId: 1773994833963-70vwkmgeu35
+[DEBUG 2026-03-20T08:20:33.985Z] Attempting decrypt for - key: mmympyd9n1MpLHs00LdF
+[DEBUG 2026-03-20T08:20:34.003Z] [SUCCESS] Decrypted msg - key: mmympyd9n1MpLHs00LdF, sender: scobru, snippet: asd
+[DEBUG 2026-03-20T08:23:40.388Z] Sending to relays - msgId: 1773995020387-ly1ppgrhqvk
+[DEBUG 2026-03-20T08:23:40.405Z] Attempting decrypt for - key: mmymty7lAf344ff3Txge
+[DEBUG 2026-03-20T08:23:40.421Z] [SUCCESS] Decrypted msg - key: mmymty7lAf344ff3Txge, sender: scobru, snippet: ghl
+[DEBUG 2026-03-20T08:23:48.419Z] Fetched 4 relays, but forcing single relay connection for real-time stability: ["https://shogun-relay.scobrudot.dev/gun"]
+[DEBUG 2026-03-20T08:23:54.327Z] Sending to relays - msgId: 1773995034321-ze3r9x80pg
+[DEBUG 2026-03-20T08:23:54.350Z] Attempting decrypt for - key: mmymu8ytQSyi5GpQ6kDT
+[DEBUG 2026-03-20T08:23:54.370Z] [SUCCESS] Decrypted msg - key: mmymu8ytQSyi5GpQ6kDT, sender: scobru, snippet: 123
+[DEBUG 2026-03-20T08:24:51.028Z] Sending to relays - msgId: 1773995091027-2vn8dbkekf
+[DEBUG 2026-03-20T08:24:51.039Z] Attempting decrypt for - key: mmymvgppgyQuOvvk3BBe
+[DEBUG 2026-03-20T08:24:51.054Z] [SUCCESS] Decrypted msg - key: mmymvgppgyQuOvvk3BBe, sender: scobru, snippet: test
+[DEBUG 2026-03-20T08:25:00.680Z] Sending to relays - msgId: 1773995100679-u2vn1vdg8xo
+[DEBUG 2026-03-20T08:25:00.689Z] Attempting decrypt for - key: mmymvo5rInE1HfgvyezI
+[DEBUG 2026-03-20T08:25:00.698Z] [SUCCESS] Decrypted msg - key: mmymvo5rInE1HfgvyezI, sender: scobru, snippet: data
+[DEBUG 2026-03-20T08:25:19.738Z] Fetched 4 relays, but forcing single relay connection for real-time stability: ["https://shogun-relay.scobrudot.dev/gun"]
+[DEBUG 2026-03-20T08:25:25.040Z] Sending to relays - msgId: 1773995125030-iya04t66d6j
+[DEBUG 2026-03-20T08:25:25.053Z] Attempting decrypt for - key: mmymw6yipwz1pHAq54ty
+[DEBUG 2026-03-20T08:25:25.068Z] [SUCCESS] Decrypted msg - key: mmymw6yipwz1pHAq54ty, sender: scobru, snippet: test
+[DEBUG 2026-03-20T08:25:35.417Z] Sending to relays - msgId: 1773995135415-yyvl2v0frw
+[DEBUG 2026-03-20T08:25:35.432Z] Attempting decrypt for - key: mmymweytlczZOolgOIx4
+[DEBUG 2026-03-20T08:25:35.444Z] [SUCCESS] Decrypted msg - key: mmymweytlczZOolgOIx4, sender: scobru, snippet: asd asd
+[DEBUG 2026-03-20T08:38:51.974Z] Fetched 4 relays, but forcing single relay connection for real-time stability: ["https://shogun-relay.scobrudot.dev/gun"]
+[DEBUG 2026-03-20T08:38:52.055Z] Fetched 4 relays, but forcing single relay connection for real-time stability: ["https://shogun-relay.scobrudot.dev/gun"]
+[DEBUG 2026-03-20T08:38:52.080Z] Sending to relays - msgId: 1773995932072-m2b0xt3ps9d
+[DEBUG 2026-03-20T08:38:52.097Z] Attempting decrypt for - key: mmyndhocFQv1kG96XSgZ
+[DEBUG 2026-03-20T08:38:52.111Z] [SUCCESS] Decrypted msg - key: mmyndhocFQv1kG96XSgZ, sender: Alice, snippet: Hello from Alic
+[DEBUG 2026-03-20T08:38:52.441Z] Attempting decrypt for - key: mmyndhocFQv1kG96XSgZ
+[DEBUG 2026-03-20T08:38:52.455Z] [SUCCESS] Decrypted msg - key: mmyndhocFQv1kG96XSgZ, sender: Alice, snippet: Hello from Alic

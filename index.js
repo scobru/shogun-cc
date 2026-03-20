@@ -17,8 +17,8 @@ class CC {
     this.alias = alias;
     this.gun = null;
     this.messages = null;
-    // Allow up to 10 minutes of clock drift between machines
-    this.startTime = Date.now() - (10 * 60 * 1000);
+    // Allow up to 24 hours of clock drift between machines
+    this.startTime = Date.now() - (24 * 60 * 60 * 1000);
     this.seen = new Set();
     this.onMessageCallback = null;
   }
@@ -148,7 +148,7 @@ class CC {
   }
 
   clear() {
-    this.startTime = Date.now() - (10 * 60 * 1000);
+    this.startTime = Date.now() - (24 * 60 * 60 * 1000);
     this.seen.clear();
   }
 }
