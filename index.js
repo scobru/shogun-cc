@@ -37,8 +37,10 @@ class CC {
       console.__cc_wrapped = true;
     }
 
-    const peers = await Relays.forceListUpdate();
-    logDebug('Fetched relays:', peers.length);
+    const fetchedPeers = await Relays.forceListUpdate();
+    // Forcing a single owned relay to avoid public relays blocking real-time WebSocket pushes
+    const peers = ['https://shogun-relay.scobrudot.dev/gun'];
+    logDebug(`Fetched ${fetchedPeers.length} relays, but forcing single relay connection for real-time stability:`, peers);
     this.gun = Gun({ peers, localStorage: false, radisk: false });
     this.messages = this.gun.get(this.roomName);
 

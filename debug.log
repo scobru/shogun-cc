@@ -254,3 +254,76 @@
 [DEBUG 2026-03-20T00:12:28.805Z] Attempting decrypt for - key: mmy5a9s2TrInAAUbpx4g
 [DEBUG 2026-03-20T00:12:28.817Z] [SUCCESS] Decrypted msg - key: mmy5a9s2TrInAAUbpx4g, sender: alice, snippet: asd asd
 [DEBUG 2026-03-20T00:12:29.478Z] Set ack - msgId: 1773965548789-al1n4w9m5u {"#":"widq07uWs","@":"AHUIvpMH5","ok":1}
+[DEBUG 2026-03-20T00:14:59.896Z] Fetched relays: 4
+[DEBUG 2026-03-20T00:15:00.526Z] Attempting decrypt for - key: mmy59jq3GpkOZ2x9wrcG
+[DEBUG 2026-03-20T00:15:00.542Z] Attempting decrypt for - key: mmy5a9s2TrInAAUbpx4g
+[DEBUG 2026-03-20T00:15:00.562Z] [SUCCESS] Decrypted msg - key: mmy59jq3GpkOZ2x9wrcG, sender: alice, snippet: hi
+[DEBUG 2026-03-20T00:15:00.608Z] [SUCCESS] Decrypted msg - key: mmy5a9s2TrInAAUbpx4g, sender: alice, snippet: asd asd
+[DEBUG 2026-03-20T00:15:16.824Z] Sending to relays - msgId: 1773965716821-3a87wcwd5cc
+[DEBUG 2026-03-20T00:15:16.836Z] Attempting decrypt for - key: mmy5dvflUAQ2G9W0ExOH
+[DEBUG 2026-03-20T00:15:16.849Z] [SUCCESS] Decrypted msg - key: mmy5dvflUAQ2G9W0ExOH, sender: alice, snippet: wwe
+[DEBUG 2026-03-20T00:15:17.548Z] Set ack - msgId: 1773965716821-3a87wcwd5cc {"#":"QnPvh6wyc","@":"N0pSj61A0","ok":1}
+[DEBUG 2026-03-20T00:15:23.268Z] Sending to relays - msgId: 1773965723267-oibj44b5p6
+[DEBUG 2026-03-20T00:15:23.277Z] Attempting decrypt for - key: mmy5e0ejkJDdRGtn3ToF
+[DEBUG 2026-03-20T00:15:23.287Z] [SUCCESS] Decrypted msg - key: mmy5e0ejkJDdRGtn3ToF, sender: alice, snippet: asd
+[DEBUG 2026-03-20T00:15:23.849Z] Set ack - msgId: 1773965723267-oibj44b5p6 {"#":"goL6HpR7n","@":"HjOfhWGkG","ok":1}
+[DEBUG 2026-03-20T00:15:45.041Z] Fetched relays: 4
+[DEBUG 2026-03-20T00:15:45.291Z] Attempting decrypt for - key: 1773965723267-oibj44b5p6
+[DEBUG 2026-03-20T00:15:45.317Z] [SUCCESS] Decrypted msg - key: 1773965723267-oibj44b5p6, sender: alice, snippet: asd
+[DEBUG 2026-03-20T00:15:45.346Z] Attempting decrypt for - key: mmy59jq3GpkOZ2x9wrcG
+[DEBUG 2026-03-20T00:15:45.384Z] [SUCCESS] Decrypted msg - key: mmy59jq3GpkOZ2x9wrcG, sender: alice, snippet: hi
+[DEBUG 2026-03-20T00:15:45.447Z] Attempting decrypt for - key: mmy5a9s2TrInAAUbpx4g
+[DEBUG 2026-03-20T00:15:45.462Z] [SUCCESS] Decrypted msg - key: mmy5a9s2TrInAAUbpx4g, sender: alice, snippet: asd asd
+[DEBUG 2026-03-20T00:15:45.479Z] Attempting decrypt for - key: mmy5dvflUAQ2G9W0ExOH
+[DEBUG 2026-03-20T00:15:45.493Z] Attempting decrypt for - key: mmy5e0ejkJDdRGtn3ToF
+[DEBUG 2026-03-20T00:15:45.509Z] [SUCCESS] Decrypted msg - key: mmy5dvflUAQ2G9W0ExOH, sender: alice, snippet: wwe
+[DEBUG 2026-03-20T00:15:45.525Z] [SUCCESS] Decrypted msg - key: mmy5e0ejkJDdRGtn3ToF, sender: alice, snippet: asd
+[DEBUG 2026-03-20T00:15:45.749Z] Attempting decrypt for - key: 1773965742121-rzcz9im8boq
+[DEBUG 2026-03-20T00:15:45.760Z] [SUCCESS] Decrypted msg - key: 1773965742121-rzcz9im8boq, sender: root, snippet: we
+[DEBUG 2026-03-20T00:16:02.635Z] Sending to relays - msgId: 1773965762632-oqsk4gh9m2b
+[DEBUG 2026-03-20T00:16:02.653Z] Attempting decrypt for - key: mmy5eusaBDWmZOcNlfm0
+[DEBUG 2026-03-20T00:16:02.668Z] [SUCCESS] Decrypted msg - key: mmy5eusaBDWmZOcNlfm0, sender: scobru, snippet: dasdasd
+[DEBUG 2026-03-20T00:16:03.229Z] Set ack - msgId: 1773965762632-oqsk4gh9m2b {"#":"yHC8jhPtD","@":"ERqebcxWK","ok":1}
+[DEBUG 2026-03-20T00:16:15.621Z] Sending to relays - msgId: 1773965775620-8d6p4on8de3
+[DEBUG 2026-03-20T00:16:15.635Z] Attempting decrypt for - key: mmy5f4swa6UyPGwh3Io4
+[DEBUG 2026-03-20T00:16:15.650Z] [SUCCESS] Decrypted msg - key: mmy5f4swa6UyPGwh3Io4, sender: scobru, snippet: adasd
+[DEBUG 2026-03-20T00:16:16.328Z] Set ack - msgId: 1773965775620-8d6p4on8de3 {"#":"OEDDZmOwA","@":"HyjnkvF3t","ok":1}
+[DEBUG 2026-03-20T00:16:21.708Z] Sending to relays - msgId: 1773965781708-t3bllu4nzzj
+[DEBUG 2026-03-20T00:16:21.720Z] Attempting decrypt for - key: mmy5f9hygrOHN6xxFgNn
+[DEBUG 2026-03-20T00:16:21.736Z] [SUCCESS] Decrypted msg - key: mmy5f9hygrOHN6xxFgNn, sender: scobru, snippet: adasda
+[DEBUG 2026-03-20T00:16:22.297Z] Set ack - msgId: 1773965781708-t3bllu4nzzj {"#":"M5S2ipstq","@":"gvk4O7awL","ok":1}
+[DEBUG 2026-03-20T00:16:38.916Z] Fetched relays: 4
+[DEBUG 2026-03-20T00:16:39.320Z] Attempting decrypt for - key: 1773965781708-t3bllu4nzzj
+[DEBUG 2026-03-20T00:16:39.345Z] [SUCCESS] Decrypted msg - key: 1773965781708-t3bllu4nzzj, sender: scobru, snippet: adasda
+[DEBUG 2026-03-20T00:16:39.365Z] Attempting decrypt for - key: mmy59jq3GpkOZ2x9wrcG
+[DEBUG 2026-03-20T00:16:39.386Z] [SUCCESS] Decrypted msg - key: mmy59jq3GpkOZ2x9wrcG, sender: alice, snippet: hi
+[DEBUG 2026-03-20T00:16:39.442Z] Attempting decrypt for - key: mmy5a9s2TrInAAUbpx4g
+[DEBUG 2026-03-20T00:16:39.455Z] [SUCCESS] Decrypted msg - key: mmy5a9s2TrInAAUbpx4g, sender: alice, snippet: asd asd
+[DEBUG 2026-03-20T00:16:39.468Z] Attempting decrypt for - key: mmy5dvflUAQ2G9W0ExOH
+[DEBUG 2026-03-20T00:16:39.481Z] [SUCCESS] Decrypted msg - key: mmy5dvflUAQ2G9W0ExOH, sender: alice, snippet: wwe
+[DEBUG 2026-03-20T00:16:39.499Z] Attempting decrypt for - key: mmy5e0ejkJDdRGtn3ToF
+[DEBUG 2026-03-20T00:16:39.513Z] Attempting decrypt for - key: mmy5eusaBDWmZOcNlfm0
+[DEBUG 2026-03-20T00:16:39.527Z] Attempting decrypt for - key: mmy5f4swa6UyPGwh3Io4
+[DEBUG 2026-03-20T00:16:39.545Z] Attempting decrypt for - key: mmy5f9hygrOHN6xxFgNn
+[DEBUG 2026-03-20T00:16:39.572Z] [SUCCESS] Decrypted msg - key: mmy5e0ejkJDdRGtn3ToF, sender: alice, snippet: asd
+[DEBUG 2026-03-20T00:16:39.587Z] [SUCCESS] Decrypted msg - key: mmy5eusaBDWmZOcNlfm0, sender: scobru, snippet: dasdasd
+[DEBUG 2026-03-20T00:16:39.600Z] [SUCCESS] Decrypted msg - key: mmy5f4swa6UyPGwh3Io4, sender: scobru, snippet: adasd
+[DEBUG 2026-03-20T00:16:39.616Z] [SUCCESS] Decrypted msg - key: mmy5f9hygrOHN6xxFgNn, sender: scobru, snippet: adasda
+[DEBUG 2026-03-20T00:16:39.638Z] Attempting decrypt for - key: 1773965786224-u61xq4ounr
+[DEBUG 2026-03-20T00:16:39.653Z] [SUCCESS] Decrypted msg - key: 1773965786224-u61xq4ounr, sender: root, snippet: qwe
+[DEBUG 2026-03-20T00:16:39.667Z] Attempting decrypt for - key: mmy5f3tmdC9CkzXOobil
+[DEBUG 2026-03-20T00:16:39.683Z] [SUCCESS] Decrypted msg - key: mmy5f3tmdC9CkzXOobil, sender: root, snippet: testa
+[DEBUG 2026-03-20T00:16:39.702Z] Attempting decrypt for - key: mmy5f4s2Af8rSJKBSe6J
+[DEBUG 2026-03-20T00:16:39.722Z] [SUCCESS] Decrypted msg - key: mmy5f4s2Af8rSJKBSe6J, sender: root, snippet: asdads
+[DEBUG 2026-03-20T00:16:39.739Z] Attempting decrypt for - key: mmy5f80qBlDlqdx81tmD
+[DEBUG 2026-03-20T00:16:39.755Z] [SUCCESS] Decrypted msg - key: mmy5f80qBlDlqdx81tmD, sender: root, snippet: vxzcvz
+[DEBUG 2026-03-20T00:16:39.821Z] Attempting decrypt for - key: mmy5fcz5iJA5ZhjLKxWr
+[DEBUG 2026-03-20T00:16:39.838Z] [SUCCESS] Decrypted msg - key: mmy5fcz5iJA5ZhjLKxWr, sender: root, snippet: qwe
+[DEBUG 2026-03-20T00:16:39.860Z] Attempting decrypt for - key: mmy5ezdfS3kG8UJTJZmV
+[DEBUG 2026-03-20T00:16:39.874Z] [SUCCESS] Decrypted msg - key: mmy5ezdfS3kG8UJTJZmV, sender: root, snippet: we
+[DEBUG 2026-03-20T00:16:49.334Z] Sending to relays - msgId: 1773965809332-s8qomchwvfi
+[DEBUG 2026-03-20T00:16:49.347Z] Attempting decrypt for - key: mmy5futbQr0ty2z4HhdL
+[DEBUG 2026-03-20T00:16:49.362Z] [SUCCESS] Decrypted msg - key: mmy5futbQr0ty2z4HhdL, sender: bob, snippet: ciao
+[DEBUG 2026-03-20T00:17:03.677Z] Sending to relays - msgId: 1773965823676-kz6pryzfkxn
+[DEBUG 2026-03-20T00:17:03.691Z] Attempting decrypt for - key: mmy5g5vtukunAwqthLmo
+[DEBUG 2026-03-20T00:17:03.708Z] [SUCCESS] Decrypted msg - key: mmy5g5vtukunAwqthLmo, sender: bob, snippet: test data
