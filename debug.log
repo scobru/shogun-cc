@@ -201,3 +201,150 @@
 [DEBUG 2026-03-21T16:49:23.122Z] Attempting decrypt for - key: mn0kc5fzOGVtwGiLCu2r
 [DEBUG 2026-03-21T16:49:23.140Z] [SUCCESS] Decrypted msg - key: mn0kc5fzOGVtwGiLCu2r, sender: scobru, snippet: asd
 [DEBUG 2026-03-21T16:49:23.725Z] Set ack - msgId: 1774111763071-9cxhl570v0g {"#":"2SqREWgr8","@":"EkFkReFmt","ok":1}
+[DEBUG 2026-03-21T16:51:09.850Z] Fetched 4 relays, but forcing single relay connection for real-time stability: ["https://gun.defucc.me/gun","https://gun.o8.is/gun","https://shogun-relay.scobrudot.dev/gun","https://relay.peer.ooo/gun"]
+[DEBUG 2026-03-21T16:51:11.317Z] Sending to relays - msgId: 1774111871297-r3iaczzz4c
+[DEBUG 2026-03-21T16:51:11.353Z] Attempting decrypt for - key: mn0kegyybOHnZezkx8R2
+[DEBUG 2026-03-21T16:51:11.385Z] [SUCCESS] Decrypted msg - key: mn0kegyybOHnZezkx8R2, sender: scobru, snippet: we
+[DEBUG 2026-03-21T16:51:11.418Z] Attempting decrypt for - key: 1774111763071-9cxhl570v0g
+[DEBUG 2026-03-21T16:51:11.444Z] [SUCCESS] Decrypted msg - key: 1774111763071-9cxhl570v0g, sender: scobru, snippet: asd
+[DEBUG 2026-03-21T16:51:11.475Z] Attempting decrypt for - key: mn0kc5fzOGVtwGiLCu2r
+[DEBUG 2026-03-21T16:51:11.495Z] [SUCCESS] Decrypted msg - key: mn0kc5fzOGVtwGiLCu2r, sender: scobru, snippet: asd
+[DEBUG 2026-03-21T16:51:11.522Z] Attempting decrypt for - key: mn0kegyybOHnZezkx8R2
+[DEBUG 2026-03-21T16:51:11.548Z] [SUCCESS] Decrypted msg - key: mn0kegyybOHnZezkx8R2, sender: scobru, snippet: we
+[DEBUG 2026-03-21T16:51:11.580Z] Attempting decrypt for - key: mn0ivpkkkbUgXrAIdrCs
+[DEBUG 2026-03-21T16:51:11.609Z] [SUCCESS] Decrypted msg - key: mn0ivpkkkbUgXrAIdrCs, sender: scobru, snippet: ahahha
+[DEBUG 2026-03-21T16:51:11.630Z] Attempting decrypt for - key: mn0ix3ij9CUldEuyRkIr
+[DEBUG 2026-03-21T16:51:11.650Z] [SUCCESS] Decrypted msg - key: mn0ix3ij9CUldEuyRkIr, sender: scobru, snippet: come staI?
+[DEBUG 2026-03-21T16:51:16.899Z] Sending to relays - msgId: 1774111876897-103ix47m0tv
+[DEBUG 2026-03-21T16:51:16.923Z] Attempting decrypt for - key: mn0kel9zpPCWAb3V84Lw
+[DEBUG 2026-03-21T16:51:16.946Z] [SUCCESS] Decrypted msg - key: mn0kel9zpPCWAb3V84Lw, sender: scobru, snippet: test
+[DEBUG 2026-03-21T16:51:16.976Z] Attempting decrypt for - key: mn0kel9zpPCWAb3V84Lw
+[DEBUG 2026-03-21T16:51:16.998Z] [SUCCESS] Decrypted msg - key: mn0kel9zpPCWAb3V84Lw, sender: scobru, snippet: test
+[DEBUG 2026-03-21T16:51:21.489Z] Attempting decrypt for - key: mn0iur05y31IyxlqQFbf
+[DEBUG 2026-03-21T16:51:21.513Z] [SUCCESS] Decrypted msg - key: mn0iur05y31IyxlqQFbf, sender: root, snippet: come va
+[DEBUG 2026-03-21T16:51:25.705Z] Sending to relays - msgId: 1774111885703-sgvlsxpu7z
+[DEBUG 2026-03-21T16:51:25.724Z] Attempting decrypt for - key: mn0kes2hEqf5xFyOCuKm
+[DEBUG 2026-03-21T16:51:25.745Z] [SUCCESS] Decrypted msg - key: mn0kes2hEqf5xFyOCuKm, sender: scobru, snippet: ciao
+[DEBUG 2026-03-21T16:51:25.788Z] Attempting decrypt for - key: mn0kes2hEqf5xFyOCuKm
+[DEBUG 2026-03-21T16:51:25.810Z] [SUCCESS] Decrypted msg - key: mn0kes2hEqf5xFyOCuKm, sender: scobru, snippet: ciao
+[DEBUG 2026-03-21T16:51:33.262Z] Attempting decrypt for - key: 1773866254000-dzfvvda8ifj
+[DEBUG 2026-03-21T16:51:33.288Z] Message ignored (timestamp too old) - key: 1773866254000-dzfvvda8ifj, msgTs: 1773866254002, startTime: 1774025469334
+[DEBUG 2026-03-21T16:51:33.311Z] Attempting decrypt for - key: 1773866258117-0ziv2quafw29
+[DEBUG 2026-03-21T16:51:33.337Z] Attempting decrypt for - key: 1773866273507-utajkdzfpr
+[DEBUG 2026-03-21T16:51:33.365Z] Attempting decrypt for - key: 1773866276874-fhwm2k19vr5
+[DEBUG 2026-03-21T16:51:33.398Z] Message ignored (timestamp too old) - key: 1773866258117-0ziv2quafw29, msgTs: 1773866258120, startTime: 1774025469334
+[DEBUG 2026-03-21T16:51:33.418Z] Message ignored (timestamp too old) - key: 1773866273507-utajkdzfpr, msgTs: 1773866273510, startTime: 1774025469334
+[DEBUG 2026-03-21T16:51:33.441Z] Message ignored (timestamp too old) - key: 1773866276874-fhwm2k19vr5, msgTs: 1773866276876, startTime: 1774025469334
+[DEBUG 2026-03-21T16:51:33.463Z] Attempting decrypt for - key: 1773866281443-8xomk25398l
+[DEBUG 2026-03-21T16:51:33.485Z] Message ignored (timestamp too old) - key: 1773866281443-8xomk25398l, msgTs: 1773866281444, startTime: 1774025469334
+[DEBUG 2026-03-21T16:51:36.328Z] Attempting decrypt for - key: 1773914029443-sk8y088z4d
+[DEBUG 2026-03-21T16:51:36.345Z] Message ignored (timestamp too old) - key: 1773914029443-sk8y088z4d, msgTs: 1773914029444, startTime: 1774025469334
+[DEBUG 2026-03-21T16:51:36.460Z] Attempting decrypt for - key: 1773916884336-rxy0zx94y
+[DEBUG 2026-03-21T16:51:36.474Z] Message ignored (timestamp too old) - key: 1773916884336-rxy0zx94y, msgTs: 1773916884336, startTime: 1774025469334
+[DEBUG 2026-03-21T16:51:36.486Z] Attempting decrypt for - key: 1773916904944-87yo4v8pu8p
+[DEBUG 2026-03-21T16:51:36.501Z] Attempting decrypt for - key: 1773917238770-cmu0vazt5l
+[DEBUG 2026-03-21T16:51:36.515Z] Message ignored (timestamp too old) - key: 1773916904944-87yo4v8pu8p, msgTs: 1773916904945, startTime: 1774025469334
+[DEBUG 2026-03-21T16:51:36.529Z] Message ignored (timestamp too old) - key: 1773917238770-cmu0vazt5l, msgTs: 1773917238771, startTime: 1774025469334
+[DEBUG 2026-03-21T16:51:37.578Z] Attempting decrypt for - key: 1773964583222-2vz73rakav9
+[DEBUG 2026-03-21T16:51:37.601Z] Message ignored (timestamp too old) - key: 1773964583222-2vz73rakav9, msgTs: 1773964583224, startTime: 1774025469334
+[DEBUG 2026-03-21T16:51:37.622Z] Attempting decrypt for - key: 1773964593335-1w6mza0g2yv
+[DEBUG 2026-03-21T16:51:37.650Z] Message ignored (timestamp too old) - key: 1773964593335-1w6mza0g2yv, msgTs: 1773964593336, startTime: 1774025469334
+[DEBUG 2026-03-21T16:51:47.669Z] Sending to relays - msgId: 1774111907668-b1twdj9m6ss
+[DEBUG 2026-03-21T16:51:47.682Z] Attempting decrypt for - key: mn0kf90eMVf6rODNwg0S
+[DEBUG 2026-03-21T16:51:47.695Z] [SUCCESS] Decrypted msg - key: mn0kf90eMVf6rODNwg0S, sender: scobru, snippet: ciao
+[DEBUG 2026-03-21T16:52:12.808Z] Sending to relays - msgId: 1774111932806-mj7860lrfur
+[DEBUG 2026-03-21T16:52:12.827Z] Attempting decrypt for - key: mn0kfsev07pdqck4cyCP
+[DEBUG 2026-03-21T16:52:12.844Z] [SUCCESS] Decrypted msg - key: mn0kfsev07pdqck4cyCP, sender: scobru, snippet: come stai
+[DEBUG 2026-03-21T16:52:30.038Z] Sending to relays - msgId: 1774111950037-fnhclu1nbu
+[DEBUG 2026-03-21T16:52:30.051Z] Attempting decrypt for - key: mn0kg5pdvpKSd9Rn9UlH
+[DEBUG 2026-03-21T16:52:30.070Z] [SUCCESS] Decrypted msg - key: mn0kg5pdvpKSd9Rn9UlH, sender: scobru, snippet: test
+[DEBUG 2026-03-21T16:52:36.605Z] Fetched 4 relays, but forcing single relay connection for real-time stability: ["https://gun.defucc.me/gun","https://gun.o8.is/gun","https://shogun-relay.scobrudot.dev/gun","https://relay.peer.ooo/gun"]
+[DEBUG 2026-03-21T16:52:37.263Z] Attempting decrypt for - key: 1774111744713-7yndpxmbj5p
+[DEBUG 2026-03-21T16:52:37.298Z] [SUCCESS] Decrypted msg - key: 1774111744713-7yndpxmbj5p, sender: alice, snippet: asd
+[DEBUG 2026-03-21T16:52:37.412Z] Attempting decrypt for - key: mn0jlmvi6KVnFacRfFO2
+[DEBUG 2026-03-21T16:52:37.427Z] [SUCCESS] Decrypted msg - key: mn0jlmvi6KVnFacRfFO2, sender: bob, snippet: test alice
+[DEBUG 2026-03-21T16:52:39.087Z] Attempting decrypt for - key: mn0jpzfrjTJROs5I4fUa
+[DEBUG 2026-03-21T16:52:39.099Z] Attempting decrypt for - key: mn0jx7xoy39lUX9Xnggw
+[DEBUG 2026-03-21T16:52:39.110Z] Attempting decrypt for - key: mn0jy7y55VensfygH1ko
+[DEBUG 2026-03-21T16:52:39.128Z] [SUCCESS] Decrypted msg - key: mn0jpzfrjTJROs5I4fUa, sender: bob, snippet: hello wolrd
+[DEBUG 2026-03-21T16:52:39.147Z] [SUCCESS] Decrypted msg - key: mn0jx7xoy39lUX9Xnggw, sender: bob, snippet: test
+[DEBUG 2026-03-21T16:52:39.164Z] [SUCCESS] Decrypted msg - key: mn0jy7y55VensfygH1ko, sender: bob, snippet: test
+[DEBUG 2026-03-21T16:52:47.828Z] Sending to relays - msgId: 1774111967821-cl1nm75v6ve
+[DEBUG 2026-03-21T16:52:47.866Z] Attempting decrypt for - key: mn0kgjg0esLVdT5xWFNO
+[DEBUG 2026-03-21T16:52:47.904Z] [SUCCESS] Decrypted msg - key: mn0kgjg0esLVdT5xWFNO, sender: alice, snippet: ciao bob
+[DEBUG 2026-03-21T16:52:48.464Z] Set ack - msgId: 1774111967821-cl1nm75v6ve {"#":"eWBxBpXwS","@":"h56yQqtn6","ok":-1}
+[DEBUG 2026-03-21T16:52:56.142Z] Attempting decrypt for - key: mn0jzjpdTi8jCk9iKOgz
+[DEBUG 2026-03-21T16:52:56.156Z] [SUCCESS] Decrypted msg - key: mn0jzjpdTi8jCk9iKOgz, sender: alice, snippet: zxc
+[DEBUG 2026-03-21T16:53:02.707Z] Sending to relays - msgId: 1774111982704-k8fiheim29l
+[DEBUG 2026-03-21T16:53:02.739Z] Attempting decrypt for - key: mn0kgux6I8m0ivKf7L0L
+[DEBUG 2026-03-21T16:53:02.786Z] [SUCCESS] Decrypted msg - key: mn0kgux6I8m0ivKf7L0L, sender: alice, snippet: test data per t
+[DEBUG 2026-03-21T16:53:03.577Z] Set ack - msgId: 1774111982704-k8fiheim29l {"#":"z4ynL09ZJ","@":"SdmZetVFy","ok":1}
+[DEBUG 2026-03-21T16:54:26.694Z] Fetched 4 relays, but forcing single relay connection for real-time stability: ["https://gun.defucc.me/gun","https://gun.o8.is/gun","https://shogun-relay.scobrudot.dev/gun","https://relay.peer.ooo/gun"]
+[DEBUG 2026-03-21T16:54:27.566Z] Attempting decrypt for - key: 1774111982704-k8fiheim29l
+[DEBUG 2026-03-21T16:54:27.589Z] [SUCCESS] Decrypted msg - key: 1774111982704-k8fiheim29l, sender: alice, snippet: test data per t
+[DEBUG 2026-03-21T16:54:28.006Z] Attempting decrypt for - key: mn0jlmvi6KVnFacRfFO2
+[DEBUG 2026-03-21T16:54:28.017Z] [SUCCESS] Decrypted msg - key: mn0jlmvi6KVnFacRfFO2, sender: bob, snippet: test alice
+[DEBUG 2026-03-21T16:54:29.370Z] Attempting decrypt for - key: mn0jpzfrjTJROs5I4fUa
+[DEBUG 2026-03-21T16:54:29.387Z] Attempting decrypt for - key: mn0jx7xoy39lUX9Xnggw
+[DEBUG 2026-03-21T16:54:29.402Z] Attempting decrypt for - key: mn0jy7y55VensfygH1ko
+[DEBUG 2026-03-21T16:54:29.438Z] [SUCCESS] Decrypted msg - key: mn0jpzfrjTJROs5I4fUa, sender: bob, snippet: hello wolrd
+[DEBUG 2026-03-21T16:54:29.457Z] [SUCCESS] Decrypted msg - key: mn0jx7xoy39lUX9Xnggw, sender: bob, snippet: test
+[DEBUG 2026-03-21T16:54:29.481Z] [SUCCESS] Decrypted msg - key: mn0jy7y55VensfygH1ko, sender: bob, snippet: test
+[DEBUG 2026-03-21T16:54:31.464Z] Sending to relays - msgId: 1774112071462-dxjuz4l1ip
+[DEBUG 2026-03-21T16:54:31.484Z] Attempting decrypt for - key: mn0kireg1DnPQoKsoXST
+[DEBUG 2026-03-21T16:54:31.503Z] [SUCCESS] Decrypted msg - key: mn0kireg1DnPQoKsoXST, sender: alice2, snippet: ehi
+[DEBUG 2026-03-21T16:54:36.633Z] Attempting decrypt for - key: 1774112076501-ms4tjv59vdm
+[DEBUG 2026-03-21T16:54:36.659Z] [SUCCESS] Decrypted msg - key: 1774112076501-ms4tjv59vdm, sender: bob, snippet: cuai vekku
+[DEBUG 2026-03-21T16:54:40.748Z] Sending to relays - msgId: 1774112080745-g69vkj1d4we
+[DEBUG 2026-03-21T16:54:40.788Z] Attempting decrypt for - key: mn0kiykunAa09xRVfHnL
+[DEBUG 2026-03-21T16:54:40.810Z] [SUCCESS] Decrypted msg - key: mn0kiykunAa09xRVfHnL, sender: alice2, snippet: tesoro mio
+[DEBUG 2026-03-21T16:54:45.359Z] Attempting decrypt for - key: 1774112085230-5cu3rpbo9jp
+[DEBUG 2026-03-21T16:54:45.376Z] [SUCCESS] Decrypted msg - key: 1774112085230-5cu3rpbo9jp, sender: bob, snippet: il mio teosroo
+[DEBUG 2026-03-21T16:54:48.819Z] Sending to relays - msgId: 1774112088815-sp1pxwh217
+[DEBUG 2026-03-21T16:54:48.856Z] Attempting decrypt for - key: mn0kj4sybrGXkxqwOc1h
+[DEBUG 2026-03-21T16:54:48.884Z] [SUCCESS] Decrypted msg - key: mn0kj4sybrGXkxqwOc1h, sender: alice2, snippet: ahaha
+[DEBUG 2026-03-21T16:54:57.791Z] Sending to relays - msgId: 1774112097789-zddhlvlrdws
+[DEBUG 2026-03-21T16:54:57.806Z] Attempting decrypt for - key: mn0kjbpog2uBJ3NDNUjc
+[DEBUG 2026-03-21T16:54:57.821Z] [SUCCESS] Decrypted msg - key: mn0kjbpog2uBJ3NDNUjc, sender: alice2, snippet: we
+[DEBUG 2026-03-21T16:54:58.124Z] Set ack - msgId: 1774112097789-zddhlvlrdws {"#":"2N9yI9PiV","@":"qa46Man9X","ok":-1}
+[DEBUG 2026-03-21T16:55:07.500Z] Fetched 4 relays, but forcing single relay connection for real-time stability: ["https://gun.defucc.me/gun","https://gun.o8.is/gun","https://shogun-relay.scobrudot.dev/gun","https://relay.peer.ooo/gun"]
+[DEBUG 2026-03-21T16:55:08.703Z] Attempting decrypt for - key: 1774112097789-zddhlvlrdws
+[DEBUG 2026-03-21T16:55:08.792Z] [SUCCESS] Decrypted msg - key: 1774112097789-zddhlvlrdws, sender: alice2, snippet: we
+[DEBUG 2026-03-21T16:55:09.766Z] Attempting decrypt for - key: mn0jlmvi6KVnFacRfFO2
+[DEBUG 2026-03-21T16:55:09.793Z] Attempting decrypt for - key: mn0jpzfrjTJROs5I4fUa
+[DEBUG 2026-03-21T16:55:09.824Z] Message ignored (timestamp too old) - key: mn0jlmvi6KVnFacRfFO2, msgTs: undefined, startTime: 1774025706952
+[DEBUG 2026-03-21T16:55:09.848Z] Message ignored (timestamp too old) - key: mn0jpzfrjTJROs5I4fUa, msgTs: undefined, startTime: 1774025706952
+[DEBUG 2026-03-21T16:55:09.872Z] Attempting decrypt for - key: mn0jx7xoy39lUX9Xnggw
+[DEBUG 2026-03-21T16:55:09.901Z] Message ignored (timestamp too old) - key: mn0jx7xoy39lUX9Xnggw, msgTs: undefined, startTime: 1774025706952
+[DEBUG 2026-03-21T16:55:09.933Z] Attempting decrypt for - key: mn0jy7y55VensfygH1ko
+[DEBUG 2026-03-21T16:55:09.961Z] Attempting decrypt for - key: mn0jyak6rgfDDPVp5Q1d
+[DEBUG 2026-03-21T16:55:10.000Z] Message ignored (timestamp too old) - key: mn0jy7y55VensfygH1ko, msgTs: undefined, startTime: 1774025706952
+[DEBUG 2026-03-21T16:55:10.023Z] Message ignored (timestamp too old) - key: mn0jyak6rgfDDPVp5Q1d, msgTs: undefined, startTime: 1774025706952
+[DEBUG 2026-03-21T16:55:10.044Z] Attempting decrypt for - key: mn0jzgvt7IllD6VITxa3
+[DEBUG 2026-03-21T16:55:10.066Z] [SUCCESS] Decrypted msg - key: mn0jzgvt7IllD6VITxa3, sender: bob, snippet: data
+[DEBUG 2026-03-21T16:55:10.399Z] Attempting decrypt for - key: mn0kaiioGC29ZR5EZzg4
+[DEBUG 2026-03-21T16:55:10.427Z] [SUCCESS] Decrypted msg - key: mn0kaiioGC29ZR5EZzg4, sender: alice, snippet: come va?
+[DEBUG 2026-03-21T16:55:12.263Z] Sending to relays - msgId: 1774112112255-9va4htwmjm
+[DEBUG 2026-03-21T16:55:12.303Z] Attempting decrypt for - key: mn0kjmw06UVrPvWHyNDr
+[DEBUG 2026-03-21T16:55:12.332Z] [SUCCESS] Decrypted msg - key: mn0kjmw06UVrPvWHyNDr, sender: alice2, snippet: test2
+[DEBUG 2026-03-21T16:55:16.618Z] Attempting decrypt for - key: 1774112116473-65u0fchxc4j
+[DEBUG 2026-03-21T16:55:16.638Z] [SUCCESS] Decrypted msg - key: 1774112116473-65u0fchxc4j, sender: bob2, snippet: test3
+[DEBUG 2026-03-21T16:55:19.590Z] Sending to relays - msgId: 1774112119589-x0ijvuhg4fs
+[DEBUG 2026-03-21T16:55:19.606Z] Attempting decrypt for - key: mn0kjsj7Aqf9GRNcjs1I
+[DEBUG 2026-03-21T16:55:19.626Z] [SUCCESS] Decrypted msg - key: mn0kjsj7Aqf9GRNcjs1I, sender: alice2, snippet: zxc
+[DEBUG 2026-03-21T16:55:23.006Z] Attempting decrypt for - key: 1774112122885-igdso1akfod
+[DEBUG 2026-03-21T16:55:23.022Z] [SUCCESS] Decrypted msg - key: 1774112122885-igdso1akfod, sender: bob2, snippet: asdasd
+[DEBUG 2026-03-21T16:55:26.722Z] Fetched 4 relays, but forcing single relay connection for real-time stability: ["https://gun.defucc.me/gun","https://gun.o8.is/gun","https://shogun-relay.scobrudot.dev/gun","https://relay.peer.ooo/gun"]
+[DEBUG 2026-03-21T16:55:27.623Z] Sending to relays - msgId: 1774112127615-grf2hdh6tmi
+[DEBUG 2026-03-21T16:55:27.639Z] Attempting decrypt for - key: mn0kjyqb8EpRgXVGdO4T
+[DEBUG 2026-03-21T16:55:27.665Z] [SUCCESS] Decrypted msg - key: mn0kjyqb8EpRgXVGdO4T, sender: alice2, snippet: asd
+[DEBUG 2026-03-21T16:55:27.902Z] Attempting decrypt for - key: mn0jlmvi6KVnFacRfFO2
+[DEBUG 2026-03-21T16:55:27.920Z] Attempting decrypt for - key: mn0jpzfrjTJROs5I4fUa
+[DEBUG 2026-03-21T16:55:27.939Z] Attempting decrypt for - key: mn0jx7xoy39lUX9Xnggw
+[DEBUG 2026-03-21T16:55:27.966Z] [SUCCESS] Decrypted msg - key: mn0jlmvi6KVnFacRfFO2, sender: bob, snippet: test alice
+[DEBUG 2026-03-21T16:55:27.982Z] [SUCCESS] Decrypted msg - key: mn0jpzfrjTJROs5I4fUa, sender: bob, snippet: hello wolrd
+[DEBUG 2026-03-21T16:55:27.999Z] [SUCCESS] Decrypted msg - key: mn0jx7xoy39lUX9Xnggw, sender: bob, snippet: test
+[DEBUG 2026-03-21T16:55:28.456Z] Attempting decrypt for - key: mn0jy7y55VensfygH1ko
+[DEBUG 2026-03-21T16:55:28.481Z] [SUCCESS] Decrypted msg - key: mn0jy7y55VensfygH1ko, sender: bob, snippet: test
+[DEBUG 2026-03-21T16:55:29.397Z] Attempting decrypt for - key: 1774112129265-4so4xbehved
+[DEBUG 2026-03-21T16:55:29.421Z] [SUCCESS] Decrypted msg - key: 1774112129265-4so4xbehved, sender: bob2, snippet: asda

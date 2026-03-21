@@ -6,7 +6,9 @@ const path = require('path');
 
 function logDebug(...args) {
   const msg = `[DEBUG ${new Date().toISOString()}] ` + args.map(a => typeof a === 'object' ? JSON.stringify(a) : a).join(' ') + '\n';
-  console.log(msg.trim());
+  if (process.env.CC_DEBUG) {
+    console.log(msg.trim());
+  }
   try { fs.appendFileSync(path.join(process.cwd(), 'debug.log'), msg); } catch (e) { }
 }
 
@@ -27,20 +29,36 @@ class CC {
     // Suppress "Could not decrypt" from SEA internally
     if (!console.__cc_wrapped) {
       const origLog = console.log;
+      const origWarn = console.warn;
+      const origError = console.error;
+
+      const isSilenced = (msg) => {
+        if (!msg) return false;
+        const str = typeof msg === 'string' ? msg : (msg.message || '');
+        return str.includes('Could not decrypt') || 
+               str.includes('No localStorage') || 
+               str.includes('Hello wonderful person') || 
+               str.includes('AXE relay enabled!');
+      };
+
       console.log = function (...args) {
-        if (args[0] === 'Could not decrypt' || (args[0] && args[0].message === 'Could not decrypt')) return;
-        // Suppress GUN warnings and extra welcome messages
-        if (typeof args[0] === 'string' && (args[0].includes('No localStorage') || args[0].includes('Hello wonderful person'))) return;
-        if (args[0] === 'AXE relay enabled!') return;
+        if (isSilenced(args[0])) return;
         origLog.apply(console, args);
+      };
+      console.warn = function (...args) {
+        if (isSilenced(args[0])) return;
+        origWarn.apply(console, args);
+      };
+      console.error = function (...args) {
+        if (isSilenced(args[0])) return;
+        origError.apply(console, args);
       };
       console.__cc_wrapped = true;
     }
 
     const fetchedPeers = await Relays.forceListUpdate();
-    // Forcing a single owned relay to avoid public relays blocking real-time WebSocket pushes
     const peers = fetchedPeers;
-    logDebug(`Fetched ${fetchedPeers.length} relays, but forcing single relay connection for real-time stability:`, peers);
+    logDebug(`Connecting to ${fetchedPeers.length} relays for maximal stability:`, peers);
     this.gun = Gun({ peers, localStorage: false, radisk: false });
     this.messages = this.gun.get(this.roomName);
 
@@ -83,7 +101,9 @@ class CC {
               });
             }
           } else {
-            if (decryptedText) {
+            if (decryptedText && decryptedTs === undefined) {
+              logDebug(`Message ignored (timestamp missing) - key: ${key}`);
+            } else if (decryptedText && decryptedTs < this.startTime) {
               logDebug(`Message ignored (timestamp too old) - key: ${key}, msgTs: ${decryptedTs}, startTime: ${this.startTime}`);
             } else {
               logDebug(`Message ignored (missing fields or wrong password) - key: ${key}`);
